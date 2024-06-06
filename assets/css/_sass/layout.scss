@@ -1,42 +1,47 @@
-.container {
-  margin: 0 auto;
-  max-width: 800px;
-  width: 80%;
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 1em;
+
+  .catalogue {
+    // background-color: #f0f0f0;
+    padding: 1em;
+  }
+
+  .pagination {
+    // background-color: #e0e0e0;
+    padding: 1em;
+    text-align: center;
+  }
 }
 
-main,
-footer,
-.nav-container {
-  display: block;
-  margin: 0 auto;
-  max-width: 800px;
-  width: 80%;
-}
 
 .nav {
-  box-shadow: 0 2px 2px -2px $shadow-color;
+  background-color: $body-bg; 
   @media (prefers-color-scheme: dark) {
-    box-shadow: 0 2px 2px -2px $shadow-color-dark;
+    background-color: $body-bg-dark;
   }
-  overflow: auto;
+  padding: 1em;
 
   &-container {
-    margin: 1rem auto;
-    position: relative;
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  &-title-link {
+    text-decoration: none;
   }
 
   &-title {
-    @include transition(all .2s ease-out);
-    color: $default-color;
+    margin: 0;
+    font-size: 1.5em;
+    color: $default-color; 
     @media (prefers-color-scheme: dark) {
       color: $default-color-dark;
     }
-    display: inline-block;
-    margin: 0;
-    padding-right: .2rem;
-    font-family: $sans-serif;
-    font-weight: 400;
 
     &:hover,
     &:focus {
@@ -44,66 +49,63 @@ footer,
     }
   }
 
-  ul {
-    list-style-type: none;
-    margin: 1rem 0 0;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1em;
+    justify-self: end;
+    list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
   }
 
-  li {
-    @include transition(all .2s ease-out);
-    color: $default-color;
+  &-item a {
+    text-decoration: none;
+
+    color: $default-color; 
     @media (prefers-color-scheme: dark) {
       color: $default-color-dark;
     }
-    display: inline-block;
-    opacity: .6;
-    padding: 0 2rem 0 0;
-
-    &:last-child {
-      padding-right: 0;
+    font-size: 1em;
+    &:hover {
+      opacity: .6;
     }
-
-    &:hover,
-    &:focus {
-      opacity: 1;
-    }
-  }
-
-  a {
-    color: $default-color;
-    @media (prefers-color-scheme: dark) {
-      color: $default-color-dark;
-    }
-    font-family: $sans-serif;
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .nav {
+    &-title-link {
+      margin-bottom: 1em;
+    }
     &-container {
-      text-align: left;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto auto;
+     text-align: center;
     }
 
-    ul {
-      bottom: 0;
-      position: absolute;
-      right: 0;
+    &-list {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      justify-self: center;
+      align-items: center;
+      gap: 0.5em;
+      padding: 0;
+      margin: 0;
+    }
+    &-item {
+      text-align: center;
     }
   }
 }
+
 
 footer {
-  font-family: $serif-secondary;
-  padding: 2rem 0;
-  text-align: center;
 
-  span {
-    color: $default-color;
-    @media (prefers-color-scheme: dark) {
-      color: $default-color-dark;
-    }
-    font-size: .8rem;
+background-color: $body-bg; 
+  @media (prefers-color-scheme: dark) {
+    background-color: $body-bg-dark;
   }
+  padding: 1em;
+  text-align: center;
 }

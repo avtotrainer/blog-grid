@@ -26,7 +26,16 @@ html {
 }
 
 body {
+
+  font-family: $sans-serif;
+  padding: 0;
   -webkit-text-size-adjust: 100%;
+  width: 80%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 600px) {
+    width: 96% ;
+  }
 }
 
 h1,

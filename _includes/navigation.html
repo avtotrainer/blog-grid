@@ -1,12 +1,12 @@
 <nav class="nav">
   <div class="nav-container">
-    <a href="{{ site.baseurl }}/">
+    <a href="{{ site.baseurl }}/" class="nav-title-link">
       <h2 class="nav-title">{{ site.title }}</h2>
     </a>
-    <ul>
-      <li><a href="{{ site.baseurl }}/">ᲞᲝᲡᲢᲔᲑᲘ</a></li>
-      <li><a href="{{ '/blog' | prepend: site.baseurl }}">ბლოგი</a></li>
-      <li><a href="{{ '/about' | prepend: site.baseurl }}">ᲩᲔᲛᲡ ᲨᲔᲡᲐᲮᲔᲑ</a></li>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="{{ site.baseurl }}/">ᲞᲝᲡᲢᲔᲑᲘ</a></li>
+      <li class="nav-item"><a href="{{ '/blog' | prepend: site.baseurl }}">ᲑᲚᲝᲒᲘ</a></li>
+      <li class="nav-item"><a href="{{ '/about' | prepend: site.baseurl }}">ᲩᲔᲛᲡ ᲨᲔᲡᲐᲮᲔᲑ</a></li>
     </ul>
   </div>
 </nav>
