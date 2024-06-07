@@ -1,6 +1,6 @@
 # Site settings
-title:          ᲑᲚᲝᲒᲘ
-description:    "მინიმალური Jekyll blog-ის თემა"
+title:         GRID 
+description:    "საიტი Jekyll პროექტზე Grig ტექნოლოგიით"
 baseurl: 
 url: 
 
@@ -13,7 +13,7 @@ google_analytics:
 # Author
 author:
   name:         ავთო ფანგანი
-  url:          https:/blog.din.ge
+  url:          https://grid.din.ge
   email:        blog@din.ge
 
 # Build settings
@@ -21,6 +21,16 @@ markdown:       kramdown
 include:
   - _pages
 
+links:
+  - title: ᲛᲗᲐᲕᲐᲠᲘ
+    url: / 
+  - title: ᲑᲚᲝᲒᲘ
+    url: /blog
+  - title: ᲩᲔᲛᲡ ᲨᲔᲡᲐᲮᲔᲑ
+    url: /about
+    #  - title: ᲙᲝᲜᲢᲐᲥᲢᲘ
+    #    url: /contact
+  
   # collections:
   # blog:
   #  output: true
