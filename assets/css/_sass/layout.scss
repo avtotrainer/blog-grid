@@ -16,11 +16,10 @@ main {
     text-align: center;
   }
 }
-$body-bg-dark: #ff0000; 
+// $body-bg-dark: #ff0000; 
 nav {
   
   display: grid;
-  // grid-template-rows: auto 1fr;
   align-items: center;
   background-color: $body-bg; 
   @media (prefers-color-scheme: dark) {
@@ -33,15 +32,14 @@ nav {
 .nav {
   &-header {
     display: grid;
-    // grid-template-columns: auto 1fr;
-    grid-column: 1/2;
-    gap: 10px;
-    align-items: center;
-    background-color: #00f0f0;
+
+  }
+  &-hitem {
+    justify-self: center;
   }
   &-title-link {
     text-decoration: none;
-    background-color: #00ff00;
+    // background-color: #00ff00;
     border: 1px solid #000;
   }
   &-title {
@@ -58,20 +56,24 @@ nav {
     }
   }
   &-list {
-    grid-column: 2/3;
+    // grid-column: 2/3;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
-    // gap: 1em;
-    // justify-self: end;
+    grid-template-columns: auto;
+grid-auto-flow: column;
     list-style: none;
+    gap: 1em;
+    // justify-self: center;         
+    justify-content: center;
     padding: 0;
     margin: 0;
-    background-color: #0000ff;
   }
   &-item {
-    // მენიუს პუნქტები უნდა გაიგრიდოს
-
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align:center;
+    white-space: nowrap;
   }
+
   &-item a {
     text-decoration: none;
 
