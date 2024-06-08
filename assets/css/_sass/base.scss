@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   @include box-sizing;
   line-height: 1.5;
 }

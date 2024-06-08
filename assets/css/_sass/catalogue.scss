@@ -5,7 +5,7 @@
     @media (prefers-color-scheme: dark) {
       color: $default-color-dark;
     }
-    display: block;
+    display: grid;
     padding: 2rem 0;
 
     &:hover .catalogue-line,

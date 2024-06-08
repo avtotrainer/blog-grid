@@ -1,8 +1,11 @@
-<nav class="nav">
-  <div class="nav-container">
-    <a href="{{ site.baseurl }}/" class="nav-title-link">
-      <h2 class="nav-title">{{ site.title }}</h2>
-    </a>
+<nav>
+    <!-- <a href="{{ site.baseurl }}/" class="nav-title-link"> -->
+     <div class="nav-header">
+        <img src="{{ site.url }}/assets/images/logo.webp" class="nav-logo" alt="Logo Image">
+        <h2 class="nav-title">{{ site.title }}</h2>
+        <p class="nav-description"> {{ site.description }}</p>
+      </div>
+    <!-- </a> -->
     <ul class="nav-list">
       {% for link in site.links %}
       {% if  link.external %}
@@ -12,5 +15,4 @@
       {% endif %}
       {% endfor %}
     </ul>
-  </div>
 </nav>
