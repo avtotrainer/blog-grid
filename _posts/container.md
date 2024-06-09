@@ -1,14 +1,7 @@
 ---
 layout: post
-title: "Гайд по grid"
-description: "Полный список свойств для создания раскладки на гридах и управления ею."
-cover:
-  author: kirakusto
-  desktop: 'images/covers/desktop.svg'
-  mobile: 'images/covers/mobile.svg'
-  alt: 'Игра, похожая на тетрис, в виде гридов (сетки)'
-authors:
-  - solarrust
+title: Гайд по grid
+description: Полный список свойств для создания раскладки на гридах и управления ею.
 contributors:
   - corocoto
   - filimonovalexey
@@ -16,15 +9,6 @@ contributors:
   - skorobaeus
 editors:
   - tachisis
-keywords:
-  - Grid Layout
-  - грид
-related:
-  - css/flexbox-guide
-  - css/has
-  - css/media
-tags:
-  - article
 ---
 
 ## Grid-ᲙᲝᲜᲢᲔᲘᲜᲔᲠᲘᲡ ᲗᲕᲘᲡᲔᲑᲔᲑᲘ

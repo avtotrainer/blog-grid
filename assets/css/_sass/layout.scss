@@ -37,10 +37,11 @@ nav {
   &-hitem {
     justify-self: center;
   }
+
   &-title-link {
     text-decoration: none;
-    // background-color: #00ff00;
-    border: 1px solid #000;
+    // border: 1px solid #0000ff;
+    text-transform: uppercase;
   }
   &-title {
     margin: 0;
