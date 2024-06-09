@@ -20,7 +20,7 @@ html {
   font-size: 14px;
   overflow-y: scroll;
 
-  @media (min-width: 600px) {
+  @media (min-width: 641px) {
     font-size: 16px;
   }
 }
@@ -33,7 +33,7 @@ body {
   width: 80%;
   margin: 0 auto;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 641px) {
     width: 90% ;
   }
 }
@@ -67,7 +67,7 @@ blockquote {
     margin-bottom: 0;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 641px) {
     padding: 0 5rem 0 1.25rem;
   }
 }
