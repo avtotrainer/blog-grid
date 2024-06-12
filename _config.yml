@@ -31,9 +31,9 @@ links:
     #  - title: ᲙᲝᲜᲢᲐᲥᲢᲘ
     #    url: /contact
   
-  # collections:
-  # blog:
-  #  output: true
+collections:
+    home:
+      output: true
   #  permalink: /blog/:categories/:year/:month/:day/:title.html
 
 # Assets
